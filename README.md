@@ -71,6 +71,7 @@ print(max(lst), min(lst))
 ```
 
 Output: 2013-07-01 01:14:24 2013-03-22 08:04:00
+
 ![This is an image](A1.png)
 
 #Part 2
