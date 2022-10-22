@@ -46,4 +46,8 @@ Minimum Latitude: -180.0
 Output:
 Average Haversine Distance = 19.03913105447283
 
+![This is an image](https://github.com/Clarkson-Applied-Data-Science/bhojanha-taxi/blob/main/A1.png)
+
 ![This is an image](/Users/Hussain/Downloads)
+
+#
