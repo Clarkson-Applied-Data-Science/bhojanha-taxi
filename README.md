@@ -48,6 +48,6 @@ Average Haversine Distance = 19.03913105447283
 
 ![This is an image](https://github.com/Clarkson-Applied-Data-Science/bhojanha-taxi/blob/main/A1.png)
 
-![This is an image](/Users/Hussain/Downloads)
+![This is an image](https://github.com/Clarkson-Applied-Data-Science/bhojanha-taxi/commit/2d2ec5202f1ab9416e7d3e0d011cc00cf8a02f2b)
 
 #
