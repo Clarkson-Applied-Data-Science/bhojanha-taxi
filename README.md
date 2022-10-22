@@ -1,77 +1,18 @@
-#Part 1A
+# Number of Rows
 
-```
-import csv
-from google.colab import drive
-drive.mount('/content/gdrive')
-from google.colab import files
-lst =[]
-f = open('gdrive/My Drive/trip_data_12.csv', 'r')
-reader = csv.reader(f)
-import datetime
-minval = None
-maxval = None
-n = 0
-for row in reader:
-    if n > 0:
-        dto = None
-        dts = row[5]
-        try:
-            dto = datetime.datetime.strptime(dts,"%Y-%m-%d %H:%M:%S")
-        except Exception as e:
-            print(e)
-        if dto is not None:
-            if maxval is None or dto > maxval:
-                maxval = dto
-            elif minval is None or dto < minval:
-                minval = dto
-    n+=1
-lst.append(minval)
-lst.append(maxval)
-
-```
-
-Output : ['medallion', ' hack_license', ' vendor_id', ' rate_code', ' store_and_fwd_flag', ' pickup_datetime', ' dropoff_datetime', ' passenger_count', ' trip_time_in_secs', ' trip_distance', ' pickup_longitude', ' pickup_latitude', ' dropoff_longitude', ' dropoff_latitude']
-14
-['D7D598CD99978BD012A87A76A7C891B7', '82F90D5EFE52FDFD2FDEC3EAD6D5771D', 'VTS', '1', '', '2013-12-01 00:13:00', '2013-12-01 00:31:00', '1', '1080', '3.90', '-73.97934', '40.776653', '-73.981865', '40.73428']
-14
+Output : 14
 
 
-#Part 1B
+#DateTime Range
 
-```
-import datetime,csv
-import csv
-from google.colab import drive
-drive.mount('/content/gdrive')
-from google.colab import files
-f = open('gdrive/My Drive/trip_data_12.csv', 'r')
-reader = csv.reader(f)
-minval = None
-maxval = None
-n = 0
-for row in reader:
-    if n > 0:
-        dto = None
-        dts = row[6]
-        try:
-            dto = datetime.datetime.strptime(dts,"%Y-%m-%d %H:%M:%S")
-        except Exception as e:
-            print(e)
-        if dto is not None:
-            if maxval is None or dto > maxval:
-                maxval = dto
-            elif minval is None or dto < minval:
-                minval = dto
-    n+=1
-lst.append(minval)
-lst.append(maxval)
-print(max(lst), min(lst))
-
-```
 
 Output: 2013-07-01 01:14:24 2013-03-22 08:04:00
 
-![This is an image](A1.png)
 
-#Part 2
+
+#Field Names
+Output :
+['medallion', ' hack_license', ' vendor_id', ' rate_code', ' store_and_fwd_flag', ' pickup_datetime', ' dropoff_datetime', ' passenger_count', ' trip_time_in_secs', ' trip_distance', ' pickup_longitude', ' pickup_latitude', ' dropoff_longitude', ' dropoff_latitude']
+
+# Sample Data
+Output:  medallion| hack_license| vendor_id| rate_code| store_and_fwd_flag| pickup_datetime| dropoff_datetime| passenger_count| trip_time_in_secs| trip_distance| pickup_longitude| pickup_latitude| dropoff_longitude| dropoff_latitude ---------------------------|---------------------------|---------------------------|---------------------------|---------------------------|---------------------------|---------------------------|---------------------------|---------------------------|---------------------------|---------------------------|---------------------------|---------------------------| D1C79CF706C80D3A1DC7FBCA6CD56E43|DAC7742E8F00034774098DBC6B4FF2B7|CMT|1|N|2013-06-03 00:02:12|2013-06-03 00:10:07|1|474|1.30|-73.981583|40.773529|-73.981827|40.782124 3567E8B49FEBFCBB587F1864D723D5C8|430B8022563CDE1D51D44786DFD8D6CB|CMT|1|N|2013-06-03 00:03:03|2013-06-03 00:19:27|1|982|4.90|-73.999565|40.728367|-73.952927|40.729546 4220E1995D36A40DF34664AD33ED13F6|48A1C9C9300AFC7BDBB718CE308EE45A|CMT|2|N|2013-06-03 00:01:30|2013-06-03 00:28:11|1|1745|17.70|-73.788445|40.641151|-73.985451|40.744194 440900089FF528A873424DED689C77A3|E6A63B40E565A8A03AF32E0B138F5EB1|CMT|1|N|2013-06-03 00:04:14|2013-06-03 00:27:50|1|1415|12.10|-73.862816|40.768875|-74.008797|40.738842
