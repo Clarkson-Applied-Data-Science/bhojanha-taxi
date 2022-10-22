@@ -51,3 +51,42 @@ Average Haversine Distance = 19.03913105447283
 ![This is an image](https://github.com/Clarkson-Applied-Data-Science/bhojanha-taxi/blob/main/Taxi%20Image%202.png)
 
 #
+
+# Min Max Values For Other Numeric Data Types
+In the below ouput
+
+rc is rate_code
+
+pc is passenger_count
+
+tis is trip_time_in_secs
+
+
+td is trip_distance
+
+
+
+
+OutPut:
+
+
+max_rc:210 , min_rc:1
+
+
+max_pc:208 ,min_pc:1
+
+
+max_tis:10800, min_tis:120
+
+
+max_td:3.9 ,min_td:0.08
+
+# One out of every thousand Rows
+
+Output:  13971
+
+#
+
+Output:
+
+![This is an image](https://github.com/Clarkson-Applied-Data-Science/bhojanha-taxi/blob/main/Taxi%20image%203.png)
