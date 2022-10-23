@@ -11,7 +11,9 @@ Output: 2013-07-01 01:14:24 2013-03-22 08:04:00
 
 
 #Field Names
+
 Output :
+
 ['medallion', ' hack_license', ' vendor_id', ' rate_code', ' store_and_fwd_flag', ' pickup_datetime', ' dropoff_datetime', ' passenger_count', ' trip_time_in_secs', ' trip_distance', ' pickup_longitude', ' pickup_latitude', ' dropoff_longitude', ' dropoff_latitude']
 
 # Description of Fields
