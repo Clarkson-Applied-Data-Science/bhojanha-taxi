@@ -14,6 +14,33 @@ Output: 2013-07-01 01:14:24 2013-03-22 08:04:00
 Output :
 ['medallion', ' hack_license', ' vendor_id', ' rate_code', ' store_and_fwd_flag', ' pickup_datetime', ' dropoff_datetime', ' passenger_count', ' trip_time_in_secs', ' trip_distance', ' pickup_longitude', ' pickup_latitude', ' dropoff_longitude', ' dropoff_latitude']
 
+# Description of Fields
+
+Output:
+
+medallion: It is a transferable permit in the United States allowing a taxicab driver to operate.
+
+hack_license: Taxi license number.
+
+vendor_id: The unique sequence which is assigned to each vendor in order to establish a record keeping and tracking system.
+
+rate_code: Rate code is taxi's meter setting.
+
+store_and_fwd_flag: This flag indicates whether the trip record was held in vehicle's memory before sending to the vendor, aka "store and forward, because the vehicle did not have a connection to the server.
+
+picup_datetime & dropoff_datetime: Date and time for a particular trip's pickup and dropoff respectively.
+
+passenger_count: Number of customer for that trip.
+
+trip_time_in_secs: Recorded total trip time in seconds.
+
+trip_distance: Recorded total trip distance.
+
+pickup_longitude & pickup_latitude: The exact location from where the passenger were picked.
+
+dropoff_longitude & dropoff latitude: The exact location to where the
+passenger were dropped.
+
 # Sample Data
 Output:  
 
@@ -52,7 +79,13 @@ Average Haversine Distance = 19.03913105447283
 
 ![This is an image](https://github.com/Clarkson-Applied-Data-Science/bhojanha-taxi/blob/main/Taxi%20Image%202.png)
 
-#
+
+# Distinct values for each Field
+
+Output:
+
+13461 33382 3 15 4 11 7280 4329 38909 64165 56642 89437
+
 
 # Min Max Values For Other Numeric Data Types
 In the below ouput
@@ -82,6 +115,11 @@ max_tis:10800, min_tis:120
 
 
 max_td:3.9 ,min_td:0.08
+
+#  A chart which shows the average number of passengers each hour of the day
+
+Output:
+![This is an image](https://github.com/Clarkson-Applied-Data-Science/bhojanha-taxi/blob/main/Part%209%20.png)
 
 # One out of every thousand Rows
 
