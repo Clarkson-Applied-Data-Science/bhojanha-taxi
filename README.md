@@ -41,6 +41,8 @@ Maximum Latitude: 404.54999
 
 Minimum Latitude: -180.0
 
+![This is an image](https://github.com/Clarkson-Applied-Data-Science/bhojanha-taxi/blob/main/Part_5.png)
+
 # Harvesine Distance
 
 Output:
@@ -85,7 +87,7 @@ max_td:3.9 ,min_td:0.08
 
 Output:  13971
 
-#
+# Comparison with the 9th Step
 
 Output:
 
